@@ -1,0 +1,8 @@
+.container {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    height: 600px;
+}
+.portrait {
+    height: 600px;
+}

@@ -1,0 +1,8 @@
+.headline {
+    font-family: 'Futura Demi';
+    font-size: 64px;
+    line-height: 75px;
+    max-width: 10ch;
+    text-align: left;
+    margin-top: auto;
+}

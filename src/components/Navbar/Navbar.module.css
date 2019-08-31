@@ -1,0 +1,10 @@
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 0 auto;
+    max-width: 954px;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}

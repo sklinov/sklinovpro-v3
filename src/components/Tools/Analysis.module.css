@@ -1,0 +1,26 @@
+.h1 {
+    text-align: left
+}
+
+.scene {
+    position: relative;
+    top: -95px;
+}
+
+.container {
+    margin-right: 50px;
+}
+
+.extcont {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.toolcont {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+}

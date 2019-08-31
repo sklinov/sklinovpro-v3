@@ -1,0 +1,10 @@
+@import url('./fonts/fonts.css');
+
+* {
+  font-family: 'Futura Book';
+}
+
+.App {
+  text-align: center;
+}
+

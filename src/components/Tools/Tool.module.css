@@ -1,0 +1,17 @@
+.image {
+    height: 60px;
+    width: 60px;
+}
+
+.extcont {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin: 15px;
+}
+
+.undecoratedlink {
+    text-decoration: none;
+    color: inherit;
+}
