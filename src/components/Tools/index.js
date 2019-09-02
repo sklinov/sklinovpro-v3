@@ -1,10 +1,8 @@
 import React, { Component } from 'react'
 import styles from './Tools.module.css'
-import Analysis from './Analysis';
-import Prototyping from './Prototyping';
-import Development from './Development';
-import Deployment from './Deployment';
 import posed from 'react-pose'
+import { stages } from './data'
+import Stage from './Stage'
 
 const Containter = posed.div({
     draggable: 'x',
@@ -15,23 +13,21 @@ const Containter = posed.div({
 })
 
 export default class Tools extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-        }
-    }
 
     render() {
         const headline = "My tools";
 
         return (
-            <div>
+            <div id="tools">
                 <h1 className={styles.headline}>{headline}</h1>
                 <Containter className={styles.container}>
-                    <Analysis />
-                    <Prototyping />
-                    <Development />
-                    <Deployment />
+                {
+                    stages.map(stage => {
+                        return (
+                            <Stage {...stage} />
+                        )
+                    })
+                }
                 </Containter>
             </div>
         )

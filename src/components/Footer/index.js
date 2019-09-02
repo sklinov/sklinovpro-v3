@@ -6,7 +6,7 @@ import styles from './Footer.module.css'
 
 export default function Footer() {
     return (
-        <div className={styles.background}>
+        <div className={styles.background} id="contacts">
             <div className={styles.container}>
                 <Contact />
                 <Social />

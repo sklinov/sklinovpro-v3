@@ -9,18 +9,18 @@ export default function Menu() {
         },
         {
             name: 'Tools',
-            url: '#'
+            url: '#tools'
         },
         {
             name: 'Contacts',
-            url: '#'
+            url: '#contacts'
         },
     ];
     return (
-        <div>
+        <div className={styles.container}>
             {
                 menuItems.map(item => {
-                    return <a href={item.url} key={item.name} className={styles.menuitem}>{item.name}</a>
+                    return <div><a href={item.url} key={item.name} className={styles.menuitem}>{item.name}</a></div>
                 })
             }
         </div>

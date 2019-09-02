@@ -8,6 +8,7 @@
 
 .container {
     margin-right: 50px;
+    height: 500px;
 }
 
 .extcont {
@@ -15,6 +16,7 @@
     flex-direction: column;
     flex-wrap: nowrap;
     align-items: center;
+    margin-bottom: 50px;
 }
 
 .toolcont {

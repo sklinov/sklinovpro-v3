@@ -8,10 +8,18 @@ import behance from '../../img/icons/behance.svg'
 export default function Social(props) {
     var size = props.size || 40;
     const styles = {
-        height: size+'px',
-        width: size+'px',
-        margin: (size/2)+'px '+(size/4)+'px',
-        cursor: 'pointer'
+        item: {
+            height: size+'px',
+            width: size+'px',
+            margin: (size/2)+'px '+(size/4)+'px',
+            cursor: 'pointer'
+        },
+        container: {
+            display: 'flex',
+            flexDirection: 'row',
+            flexWrap: 'nowrap'
+        }
+        
     };
 
     const li = 'https://www.linkedin.com/in/sergei-klinov-1a7b4a182/';
@@ -19,10 +27,10 @@ export default function Social(props) {
     const bh = 'https://www.behance.net/sklinov'
 
     return (
-        <div>
-            <a href={li}><img src={linkedin} alt="LinkedIn" style={styles}/></a>
-            <a href={gh}><img src={github} alt="Github" style={styles} /></a>
-            <a href={bh}><img src={behance} alt="Behance" style={styles}/></a>
+        <div style={styles.container}>
+            <a href={li}><img src={linkedin} alt="LinkedIn" style={styles.item}/></a>
+            <a href={gh}><img src={github} alt="Github" style={styles.item} /></a>
+            <a href={bh}><img src={behance} alt="Behance" style={styles.item}/></a>
         </div>
     )
 }

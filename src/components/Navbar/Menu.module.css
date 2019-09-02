@@ -1,8 +1,13 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+}
 .menuitem {
     color: black;
     text-decoration: none;
     font-size: 18px;
-    margin-right: 60px;
 }
 
 .menuitem:hover {

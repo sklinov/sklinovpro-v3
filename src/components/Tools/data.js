@@ -3,7 +3,6 @@ import prototyping from '../../img/prototyping.svg'
 import development from '../../img/development.svg'
 import deployment from '../../img/deployment.svg'
 
-
 import google from '../../img/tools/googleanalytics.svg'
 import alexa from '../../img/tools/alexa.svg'
 
@@ -16,42 +15,7 @@ import php from '../../img/tools/php.svg'
 import mysql from '../../img/tools/mysql.svg'
 import bem from '../../img/tools/bem.svg'
 import mongodb from '../../img/tools/mongodb.svg'
-
-
-export const stages = [
-    {
-        name: 'Analysis',
-        image: analysis,
-        imageOffset: '-95px' ,
-        tools: [
-
-        ]
-    },
-    {
-        name: 'Prototyping',
-        image: prototyping,
-        imageOffset: '-47px',
-        tools: [
-            
-        ]
-    },
-    {
-        name: 'Development',
-        image: development,
-        imageOffset: '47px',
-        tools: [
-            
-        ]
-    },
-    {
-        name: 'Deployment',
-        image: deployment,
-        imageOffset: '-218px',
-        tools: [
-            
-        ]
-    },
-]
+import docker from '../../img/tools/docker.svg'
 
 const tools = {
     ganalytics : {
@@ -77,8 +41,73 @@ const tools = {
     react : {
         name: 'React',
         image: react,
-        url: 'https://alexa.com'
+        url: 'https://github.com/sklinov/sklinovpro-v3'
     },
-
-
+    redux : {
+        name: 'Redux',
+        image: redux,
+        url: 'https://github.com/sklinov/simplememo'
+    },
+    php : {
+        name: 'PHP',
+        image: php,
+        url: 'https://github.com/sklinov/supershop_v2'
+    },
+    mysql: {
+        name: 'MySQL',
+        image: mysql,
+        url: 'https://github.com/sklinov/supershop_v2'
+    },
+    bem: {
+        name: 'BEM',
+        image: bem,
+        url: 'https://github.com/sklinov/diploma/tree/master/styles'
+    },
+    mongodb: {
+        name: 'MongoDB',
+        image: mongodb,
+        url: 'https://github.com/sklinov/mongo-js'
+    },
+    docker: {
+        name: 'Docker',
+        image: docker,
+        url: 'https://www.docker.com/'
+    }
 }
+
+
+export const stages = [
+    {
+        name: 'Analysis',
+        image: analysis,
+        imageOffset: '-95px' ,
+        tools: [
+            tools.ganalytics, tools.alexa
+        ]
+    },
+    {
+        name: 'Prototyping',
+        image: prototyping,
+        imageOffset: '-47px',
+        tools: [
+            tools.figma, tools.photoshop
+        ]
+    },
+    {
+        name: 'Development',
+        image: development,
+        imageOffset: '47px',
+        tools: [
+            tools.react, tools.redux, tools.php, tools.mongodb, tools.mysql, tools.bem
+        ]
+    },
+    {
+        name: 'Deployment',
+        image: deployment,
+        imageOffset: '-218px',
+        tools: [
+            tools.docker
+        ]
+    },
+]
+
