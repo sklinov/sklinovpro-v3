@@ -18,7 +18,6 @@ export default class Tools extends Component {
 
         const Containter = posed.div({
             draggable: 'x',
-            
             init: {
                 x: initX
             }
