@@ -6,7 +6,7 @@ import Social from './Social';
 
 export default function Navbar() {
     return (
-        <div className={styles.row}>
+        <div className={styles.container}>
             <Logo />
             <Menu />
             <Social />

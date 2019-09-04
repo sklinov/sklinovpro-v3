@@ -20,7 +20,7 @@ export default function Menu() {
         <div className={styles.container}>
             {
                 menuItems.map(item => {
-                    return <div><a href={item.url} key={item.name} className={styles.menuitem}>{item.name}</a></div>
+                    return <div key={item.name}><a href={item.url}  className={styles.menuitem}>{item.name}</a></div>
                 })
             }
         </div>

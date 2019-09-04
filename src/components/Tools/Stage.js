@@ -14,16 +14,16 @@ const Box = posed.div({
   });
 
 export default function Stage(props) {
-    const { stage, image, imageOffset, tools } = props;
+    const { name, image, imageOffset, tools } = props;
     return (
         <div className={styles.extcont}>
             <Box className={styles.container}>
-                <h1 className={styles.h1}>{stage}</h1>
-                <img src={image} alt={stage} className={styles.scene} style={{top: imageOffset}}/>
+                <h1 className={styles.h1}>{name}</h1>
+                <img src={image} alt={name} className={styles.scene} style={{top: imageOffset}}/>
             </Box>
             <div className={styles.toolcont}>
             {
-                tools.map(tool => <Tool image={tool.image} name={tool.name} url={tool.url}/>)
+                tools.map(tool => <Tool image={tool.image} name={tool.name} url={tool.url} key={tool.name}/>)
             }
             </div>
         </div>

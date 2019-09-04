@@ -6,3 +6,10 @@
     text-align: left;
     margin-top: auto;
 }
+
+@media(max-width: 576px) {
+    .headline {
+        font-size: 36px;
+        line-height: 40px;
+    }
+}

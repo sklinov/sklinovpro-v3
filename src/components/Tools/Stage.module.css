@@ -25,3 +25,19 @@
     flex-wrap: nowrap;
     align-items: center;
 }
+
+@media(max-width: 576px) {
+    .container {
+        height: 400px;
+        margin-right: 40px;
+    }
+    .scene {
+        transform: scale(0.6);
+        top: initial;
+    }
+    .toolcont {
+        flex-wrap: wrap;
+        max-width: 500px;
+        justify-content: center;
+    }
+}

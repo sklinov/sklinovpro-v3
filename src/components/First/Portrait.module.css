@@ -6,3 +6,13 @@
 .portrait {
     height: 600px;
 }
+
+@media(max-width: 576px) {
+    .container {
+        height: initial;
+    }
+    .portrait {
+        max-width: calc(100vw / 2 - 40px);
+        height: initial;
+    }
+}

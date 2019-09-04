@@ -1,0 +1,14 @@
+@import url('./fonts/fonts.css');
+
+* {
+  font-family: 'Futura Book';
+}
+
+.App {
+  text-align: center;
+  display: grid;
+  grid-template-columns: minmax(20px, auto) minmax(auto, 954px) minmax(20px, auto);
+  grid-template-rows: repeat(5, auto);
+
+}
+

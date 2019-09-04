@@ -1,0 +1,10 @@
+.container {
+    margin: inherit;
+    font-weight: 400;
+}
+
+@media(max-width: 576px){
+    .container {
+        grid-column: 1/3;
+    }
+}

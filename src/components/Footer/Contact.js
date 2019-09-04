@@ -1,9 +1,9 @@
-import React, { Component } from 'react'
+import React from 'react'
+import styles from './Contact.module.css'
 
-export default class Contact extends Component {
-    render() {
+export default function Contact() {
         return (
-            <div>
+            <div className={styles.container}>
                 <h1>
                     Drop me a line
                 </h1>
@@ -12,5 +12,4 @@ export default class Contact extends Component {
                 </h1>
             </div>
         )
-    }
 }

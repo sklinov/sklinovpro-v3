@@ -1,14 +1,14 @@
 import React from 'react';
-import './App.css';
-import Navbar from './components/Navbar';
-import First from './components/First';
-import About from './components/About';
-import Tools from './components/Tools';
-import Footer from './components/Footer';
+import styles from './App.module.css';
+import Navbar from './components/Navbar/Navbar';
+import First from './components/First/First';
+import About from './components/About/About';
+import Tools from './components/Tools/Tools';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
-    <div className="App">
+    <div className={styles.App}>
       <Navbar />
       <First />
       <About />
